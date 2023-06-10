@@ -1,51 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&display=swap');
 
-* {font-family: "Prata" , serif;
+* {
+    font-family: "Prata", serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-header{
+header {
     background-color: white;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     height: 80px;
     align-items: center;
     padding: 10px 5%;
 }
 
-header .imagen img{
+header .imagen img {
     height: 80px;
     width: auto;
     padding: 10px;
 }
 
-header .nav-link{
+header .nav-link {
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
 
-header .nav-link li{
+header .nav-link li {
     padding: 8px;
 }
 
-header .nav-link li a{
+header .nav-link li a {
     font-weight: 700;
     color: #E51E20;
     text-decoration: none;
 }
-.container{
+
+.container {
     display: flex;
-    width: 90%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
-.jumbotron{
+
+label {
+    position: relative;
+}
+
+input[type="text"] {
+    border: #E51E20 1px solid ;
+    max-width: 360px;
+    height: 50px;
+    padding: 0 16px;
+    width: 50%;
+    
+}
+
+button {
+    background-color: #E51E20;
+    color: white;
+    padding: 0 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+}
+
+button:hover {
+    transition: .8s;
+    background-color: #6c6c6c;
+}
+
+.jumbotron {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+
+    width: 50%;
 }
-.container  h1{
+
+.container h1 {
     color: #E51E20;
     font-size: 70px;
     text-align: center;
@@ -53,18 +96,59 @@ header .nav-link li a{
 
 .extra {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 30px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.extra .textos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .extra p {
     padding: 30px;
-    font-size: 50px ;
+    font-size: 50px;
+    width: 80%;
+    text-align: left;
 }
-.extra hr{
-    width: 50%;
+
+.extra hr {
+    width: 80%;
 }
-.extra img{
+
+.extra img {
     display: block;
-   border-radius: 8px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.imagen-extra{
     width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    text-align:center;
+    width: 50%;
+}
+
+.formulario p{
+    padding-bottom: 20px;
+    
+}
+
+@media (max-width:480px){
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .formulario, .jumbotron{
+        width: 100%;
+    }
 }
