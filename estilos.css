@@ -111,7 +111,7 @@ button:hover {
 }
 .extra p {
     padding: 30px;
-    font-size: 50px;
+    font-size: 45px;
     width: 80%;
     text-align: left;
 }
@@ -141,6 +141,42 @@ button:hover {
     padding-bottom: 20px;
     
 }
+.formulario h2{
+    padding-bottom: 8px;
+}
+
+
+.grid-gallery{
+ 
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    padding: 100px;
+  
+
+}
+.grid-gallery img{
+width: 100%;
+height: 100%;
+border-radius: 8px; 
+object-fit: contain;  
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.blog img{
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
 
 @media (max-width:480px){
     .container{
@@ -151,4 +187,29 @@ button:hover {
     .formulario, .jumbotron{
         width: 100%;
     }
+    .imagen-extra{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .textos{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .extra{
+        flex-direction: column;
+        width: 100%;
+    }
+    .extra hr{
+        width: 100%;
+    }
+    .extra p{
+        width: 100%;
+        text-align: center ;
+    }
+
+
 }
+
