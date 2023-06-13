@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&display=swap');
 
 * {
-    font-family: "Prata", serif;
+   
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -33,9 +33,10 @@ header .nav-link li {
 }
 
 header .nav-link li a {
-    font-weight: 700;
+    font-weight: 400;
     color: #E51E20;
     text-decoration: none;
+    font-family:'Inter', sans-serif;
 }
 
 .container {
@@ -58,6 +59,7 @@ input[type="text"] {
     height: 50px;
     padding: 0 16px;
     width: 50%;
+    font-family:'Inter', sans-serif;
     
 }
 
@@ -72,6 +74,7 @@ button {
     cursor: pointer;
     height: 50px;
     line-height: 50px;
+    font-family:'Prata', serif;
 }
 
 button:hover {
@@ -92,6 +95,7 @@ button:hover {
     color: #E51E20;
     font-size: 70px;
     text-align: center;
+    font-family:'Prata', serif;
 }
 
 .extra {
@@ -114,6 +118,8 @@ button:hover {
     font-size: 45px;
     width: 80%;
     text-align: left;
+    font-family: 'Prata', serif;
+    cursor: pointer;
 }
 
 .extra hr {
@@ -139,10 +145,13 @@ button:hover {
 
 .formulario p{
     padding-bottom: 20px;
+    font-family:'Inter', sans-serif;
+    font-weight:400 ;
     
 }
 .formulario h2{
     padding-bottom: 8px;
+    font-family: 'Prata', serif;
 }
 
 
@@ -166,17 +175,146 @@ object-fit: contain;
     display: flex;
     align-items: center;
     width: 100%;
-    vertical-align: middle;
+    vertical-align: left;
     justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10% ;
+    box-sizing: border-box;
+    border-width: 0px;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+    border-style: solid;
 }
+
 
 .blog img{
     width: 80%;
     height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
 
 }
+
+.blog .textos-blog{
+    width: 80%;
+  
+}
+
+.blog .textos-blog .texto-body{
+    padding-bottom: 12px;
+    font-family:'Inter', sans-serif;
+    font-weight:300 ;
+}
+
+.blog .textos-blog .titulo{
+    padding-bottom: 12px;
+    font-family:'Prata', serif;
+    
+}
+
+.blog .textos-blog h2{
+    padding-bottom: 4px;
+    padding-top: 16px;
+    font-family: 'Prata', serif;
+    color: #E51E20;
+
+}
+.extra-blog{
+    display: flex;
+    flex-direction: row;
+}
+.container-2{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    font-family: 'Prata', serif;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #E51E20;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    font-family:'Inter', sans-serif;
+    font-weight:300 ;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 480px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
 
 @media (max-width:480px){
     .container{
